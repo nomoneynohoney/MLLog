@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--LogVC-->
+        <scene sceneID="swO-KX-km8">
+            <objects>
+                <viewController storyboardIdentifier="MLLogVC" id="yTO-vU-6ZR" customClass="MLLogVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1fQ-i9-6u3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tda-A3-SGl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9wa-ZO-f3f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vhh-Vv-hmb">
+                                <rect key="frame" x="8" y="8" width="584" height="572"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.1033550941780822" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ML_Expand.png" translatesAutoresizingMaskIntoConstraints="NO" id="D6D-2n-7JQ">
+                                <rect key="frame" x="580" y="580" width="20" height="20"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="aV0-ZE-ehW"/>
+                                    <constraint firstAttribute="height" constant="20" id="uPA-ih-KG3"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="byW-pj-IX3" appends="YES" id="bMM-fZ-AyP"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ML_Drag.png" translatesAutoresizingMaskIntoConstraints="NO" id="LXf-WB-VnC">
+                                <rect key="frame" x="285" y="580" width="30" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="TAO-Kb-0yw"/>
+                                    <constraint firstAttribute="width" constant="30" id="zgq-5R-Nzi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vhh-Vv-hmb" secondAttribute="trailing" constant="8" id="46g-UR-cKj"/>
+                            <constraint firstAttribute="trailing" secondItem="D6D-2n-7JQ" secondAttribute="trailing" id="Ecp-0K-fSe"/>
+                            <constraint firstItem="Vhh-Vv-hmb" firstAttribute="top" secondItem="9wa-ZO-f3f" secondAttribute="top" constant="8" id="H3K-xY-Rut"/>
+                            <constraint firstItem="Tda-A3-SGl" firstAttribute="top" secondItem="Vhh-Vv-hmb" secondAttribute="bottom" constant="20" id="KRH-P5-GsN"/>
+                            <constraint firstItem="Vhh-Vv-hmb" firstAttribute="leading" secondItem="9wa-ZO-f3f" secondAttribute="leading" constant="8" id="PkO-TU-waE"/>
+                            <constraint firstItem="Tda-A3-SGl" firstAttribute="top" secondItem="LXf-WB-VnC" secondAttribute="bottom" id="TKA-dc-yPe"/>
+                            <constraint firstItem="LXf-WB-VnC" firstAttribute="centerX" secondItem="9wa-ZO-f3f" secondAttribute="centerX" id="VAH-WP-grr"/>
+                            <constraint firstAttribute="bottom" secondItem="D6D-2n-7JQ" secondAttribute="bottom" id="evd-dP-2jF"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="D7M-lw-8lI" appends="YES" id="ZqD-KY-Yev"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="txt" destination="Vhh-Vv-hmb" id="zxx-Xs-Lis"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ZV-H5-k74" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="D7M-lw-8lI">
+                    <connections>
+                        <action selector="handleDrag:" destination="yTO-vU-6ZR" id="6Y7-mP-ZSZ"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="byW-pj-IX3">
+                    <connections>
+                        <action selector="handleZoom:" destination="yTO-vU-6ZR" id="7rZ-7B-mLV"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="268" y="250"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ML_Drag.png" width="90" height="90"/>
+        <image name="ML_Expand.png" width="120" height="120"/>
+    </resources>
+</document>
