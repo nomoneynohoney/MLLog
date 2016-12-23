@@ -18,9 +18,11 @@
 		49FF51FB1E0C0BA100EE5CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FF51FA1E0C0BA100EE5CC1 /* Assets.xcassets */; };
 		49FF51FE1E0C0BA100EE5CC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FF51FC1E0C0BA100EE5CC1 /* LaunchScreen.storyboard */; };
 		49FF520D1E0C0CE400EE5CC1 /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FF520C1E0C0CE400EE5CC1 /* ViewControllerB.m */; };
+		FE756B897248EA82CAE8B37A /* Pods_MLLogDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08F6181E54F09C8A6589CAE /* Pods_MLLogDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		097F8FC117B855551FD14E35 /* Pods-MLLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLLogDemo/Pods-MLLogDemo.release.xcconfig"; sourceTree = "<group>"; };
 		494DB4A71E0C33D3002DC1CD /* ML_Drag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ML_Drag.png; sourceTree = "<group>"; };
 		494DB4A81E0C33D3002DC1CD /* ML_Expand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ML_Expand.png; sourceTree = "<group>"; };
 		494DB4A91E0C33D3002DC1CD /* MLLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLog.h; sourceTree = "<group>"; };
@@ -39,6 +41,8 @@
 		49FF51FF1E0C0BA100EE5CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49FF520B1E0C0CE400EE5CC1 /* ViewControllerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
 		49FF520C1E0C0CE400EE5CC1 /* ViewControllerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
+		6F72F0C7DE75533FFBE9313D /* Pods-MLLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLLogDemo/Pods-MLLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A08F6181E54F09C8A6589CAE /* Pods_MLLogDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLLogDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,12 +50,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE756B897248EA82CAE8B37A /* Pods_MLLogDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3F7092864AE2A9179EE2F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A08F6181E54F09C8A6589CAE /* Pods_MLLogDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AFC35FB339D4EAC11274060 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F72F0C7DE75533FFBE9313D /* Pods-MLLogDemo.debug.xcconfig */,
+				097F8FC117B855551FD14E35 /* Pods-MLLogDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		494DB4A61E0C33D3002DC1CD /* MLLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +93,8 @@
 			children = (
 				49FF51ED1E0C0BA000EE5CC1 /* MLLogDemo */,
 				49FF51EC1E0C0BA000EE5CC1 /* Products */,
+				3AFC35FB339D4EAC11274060 /* Pods */,
+				0A3F7092864AE2A9179EE2F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49FF52021E0C0BA100EE5CC1 /* Build configuration list for PBXNativeTarget "MLLogDemo" */;
 			buildPhases = (
+				0E2617124F7DAB26862CBE3C /* [CP] Check Pods Manifest.lock */,
 				49FF51E71E0C0BA000EE5CC1 /* Sources */,
 				49FF51E81E0C0BA000EE5CC1 /* Frameworks */,
 				49FF51E91E0C0BA000EE5CC1 /* Resources */,
+				71BC10E727A86F597F6DF6DA /* [CP] Embed Pods Frameworks */,
+				9B3A3F56B92329797F0733AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,6 +203,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E2617124F7DAB26862CBE3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71BC10E727A86F597F6DF6DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLLogDemo/Pods-MLLogDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B3A3F56B92329797F0733AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLLogDemo/Pods-MLLogDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49FF51E71E0C0BA000EE5CC1 /* Sources */ = {
@@ -296,6 +371,7 @@
 		};
 		49FF52031E0C0BA100EE5CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F72F0C7DE75533FFBE9313D /* Pods-MLLogDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MLLogDemo/Info.plist;
@@ -308,6 +384,7 @@
 		};
 		49FF52041E0C0BA100EE5CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097F8FC117B855551FD14E35 /* Pods-MLLogDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MLLogDemo/Info.plist;

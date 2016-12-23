@@ -49,9 +49,13 @@ static UIWindow *logWindow = nil;
             logWindow = [[UIWindow alloc] initWithFrame:CGRectMake((s.width-w)/2.0, s.height-h-80.0, w, h)];
             logWindow.clipsToBounds = YES;
             logWindow.windowLevel = UIWindowLevelAlert + 1000;
+            
+            NSBundle *podBundle = [NSBundle bundleForClass:[self class]];
+            NSURL *bundleURL = [podBundle URLForResource:@"MLLog" withExtension:@"bundle"];
+            NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
         
             
-            MLLogVC *vc = [[UIStoryboard storyboardWithName:@"MLLog" bundle:nil] instantiateViewControllerWithIdentifier:@"MLLogVC"];
+            MLLogVC *vc = [[UIStoryboard storyboardWithName:@"MLLog" bundle:bundle] instantiateViewControllerWithIdentifier:@"MLLogVC"];
             logWindow.rootViewController = vc;
             [logWindow makeKeyAndVisible];
         });
