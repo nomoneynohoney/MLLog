@@ -1,4 +1,4 @@
 # MLLog
-A NSLog replacement for showing log window on device. 
+An Objective-C NSLog replacement for presenting a resizable log window on devide or simulator, may easily monitor runtime varibles on multiple devices without connect to Xcode.
 
-NSLog的替代品, 並且可以在執行時期顯示Log視窗, 方便多機測試時使用.
+Objective-C NSLog的替代品, 並且可以在執行時期顯示Log視窗, 方便多機測試時使用.
