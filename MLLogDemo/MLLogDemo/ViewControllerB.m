@@ -2,7 +2,6 @@
 //  Copyright © 2016年 6neko Studio. All rights reserved.
 
 #import "ViewControllerB.h"
-#import "MLLog.h"
 
 @interface ViewControllerB ()
 
@@ -21,7 +20,6 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    MLLog(@"View Controller B Appeared.");
 }
 /*
 #pragma mark - Navigation

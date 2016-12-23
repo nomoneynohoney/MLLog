@@ -2,7 +2,6 @@
 //  Copyright © 2016年 6neko Studio. All rights reserved.
 
 #import "AppDelegate.h"
-#import "MLLog.h"
 
 @interface AppDelegate ()
 
@@ -13,7 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    EnableMLLog();
     return YES;
 }
 
