@@ -38,6 +38,7 @@ static UIWindow *logWindow = nil;
         });
     }
     NSLog(@"%@", string);
+    ///
 }
 
 +(void)showLogWindow{
