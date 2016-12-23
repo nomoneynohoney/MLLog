@@ -53,6 +53,7 @@ static UIWindow *logWindow = nil;
             logWindow = [[UIWindow alloc] initWithFrame:CGRectMake((s.width-w)/2.0, s.height-h-80.0, w, h)];
             logWindow.clipsToBounds = YES;
             logWindow.windowLevel = UIWindowLevelAlert + 1000;
+        
             
             MLLogVC *vc = [[UIStoryboard storyboardWithName:@"MLLog" bundle:nil] instantiateViewControllerWithIdentifier:@"MLLogVC"];
             logWindow.rootViewController = vc;
