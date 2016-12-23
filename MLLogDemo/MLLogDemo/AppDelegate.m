@@ -1,10 +1,5 @@
-//
-//  AppDelegate.m
-//  MLLogDemo
-//
 //  Created by Marc Liu on 2016/12/22.
-//  Copyright © 2016年 com.creatidea. All rights reserved.
-//
+//  Copyright © 2016年 6neko Studio. All rights reserved.
 
 #import "AppDelegate.h"
 #import "MLLog.h"
