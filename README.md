@@ -1,6 +1,6 @@
 ## MLLog
 
-An Objective-C NSLog replacement for presenting a resizable log window on devide or simulator, may easily monitor runtime varibles on multiple devices without connect to Xcode.
+An Objective-C NSLog replacement for presenting a resizable log window on device or simulator, may easily monitor runtime varibles on multiple devices without connect to Xcode.
 
 Objective-C NSLog的替代品, 並且可以在執行時期顯示Log視窗, 方便多機測試時使用.
 
@@ -66,4 +66,4 @@ Just remark the line "EnableMLLog();". MLLog will act like NSLog. You don't have
 
 ## License
 
-AFNetworking is released under the MIT license. See LICENSE for details.
+MLLog is released under the MIT license. See LICENSE for details.
