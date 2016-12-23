@@ -18,6 +18,7 @@
 		49FF51FB1E0C0BA100EE5CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FF51FA1E0C0BA100EE5CC1 /* Assets.xcassets */; };
 		49FF51FE1E0C0BA100EE5CC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FF51FC1E0C0BA100EE5CC1 /* LaunchScreen.storyboard */; };
 		49FF520D1E0C0CE400EE5CC1 /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FF520C1E0C0CE400EE5CC1 /* ViewControllerB.m */; };
+		FB827342C07266D417EE1986 /* libPods-MLLogDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E653F7D138279D4559B11C /* libPods-MLLogDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,9 @@
 		49FF51FF1E0C0BA100EE5CC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49FF520B1E0C0CE400EE5CC1 /* ViewControllerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
 		49FF520C1E0C0CE400EE5CC1 /* ViewControllerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
+		58E653F7D138279D4559B11C /* libPods-MLLogDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLLogDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD6A97F34A5FD6E20173F95 /* Pods-MLLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLLogDemo/Pods-MLLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F6F637A12529DD3319AA9FE6 /* Pods-MLLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLLogDemo/Pods-MLLogDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB827342C07266D417EE1986 /* libPods-MLLogDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,8 @@
 			children = (
 				49FF51ED1E0C0BA000EE5CC1 /* MLLogDemo */,
 				49FF51EC1E0C0BA000EE5CC1 /* Products */,
+				F4F3152E7BA8A59F951B4A35 /* Pods */,
+				9A64B36A1D0951D74F733114 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +116,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9A64B36A1D0951D74F733114 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58E653F7D138279D4559B11C /* libPods-MLLogDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4F3152E7BA8A59F951B4A35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDD6A97F34A5FD6E20173F95 /* Pods-MLLogDemo.debug.xcconfig */,
+				F6F637A12529DD3319AA9FE6 /* Pods-MLLogDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49FF52021E0C0BA100EE5CC1 /* Build configuration list for PBXNativeTarget "MLLogDemo" */;
 			buildPhases = (
+				DF1C584CC65C5FE40F95C4C4 /* [CP] Check Pods Manifest.lock */,
 				49FF51E71E0C0BA000EE5CC1 /* Sources */,
 				49FF51E81E0C0BA000EE5CC1 /* Frameworks */,
 				49FF51E91E0C0BA000EE5CC1 /* Resources */,
+				43420E6A80332FAE40E33734 /* [CP] Embed Pods Frameworks */,
+				73E31648D4E6C37F2DDC9083 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,6 +203,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43420E6A80332FAE40E33734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLLogDemo/Pods-MLLogDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73E31648D4E6C37F2DDC9083 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLLogDemo/Pods-MLLogDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF1C584CC65C5FE40F95C4C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49FF51E71E0C0BA000EE5CC1 /* Sources */ = {
@@ -296,6 +371,7 @@
 		};
 		49FF52031E0C0BA100EE5CC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD6A97F34A5FD6E20173F95 /* Pods-MLLogDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MLLogDemo/Info.plist;
@@ -308,6 +384,7 @@
 		};
 		49FF52041E0C0BA100EE5CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F637A12529DD3319AA9FE6 /* Pods-MLLogDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MLLogDemo/Info.plist;
