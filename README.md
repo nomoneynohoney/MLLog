@@ -15,8 +15,13 @@ Objective C
 iOS 8.0 and above.
 
 ## Installation
-pod 'MLLog', '-> 1.1.2'
+```ruby
+platform :ios, '8.0'
 
+target 'TargetName' do
+  pod 'MLLog', '-> 1.1.2'
+end
+```
 ## How To Use It
 At first you have to import the MLLog.h header file, and add one line "EnableMLLog();" in the -application: didFinishLaunchingWithOptions:, it will enable the "On Screen Log Window" globally, no matter which view controller you are. Then use MLLog as you used to use NSLog.
 
