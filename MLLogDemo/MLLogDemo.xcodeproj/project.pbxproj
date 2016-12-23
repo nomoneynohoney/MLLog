@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		494DB4AD1E0C33D3002DC1CD /* ML_Drag.png in Resources */ = {isa = PBXBuildFile; fileRef = 494DB4A71E0C33D3002DC1CD /* ML_Drag.png */; };
-		494DB4AE1E0C33D3002DC1CD /* ML_Expand.png in Resources */ = {isa = PBXBuildFile; fileRef = 494DB4A81E0C33D3002DC1CD /* ML_Expand.png */; };
-		494DB4AF1E0C33D3002DC1CD /* MLLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494DB4AA1E0C33D3002DC1CD /* MLLog.storyboard */; };
-		494DB4B01E0C33D3002DC1CD /* MLLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 494DB4AC1E0C33D3002DC1CD /* MLLogVC.m */; };
 		49FF51F01E0C0BA000EE5CC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FF51EF1E0C0BA000EE5CC1 /* main.m */; };
 		49FF51F31E0C0BA100EE5CC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FF51F21E0C0BA100EE5CC1 /* AppDelegate.m */; };
 		49FF51F61E0C0BA100EE5CC1 /* ViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FF51F51E0C0BA100EE5CC1 /* ViewControllerA.m */; };
@@ -22,12 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		494DB4A71E0C33D3002DC1CD /* ML_Drag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ML_Drag.png; sourceTree = "<group>"; };
-		494DB4A81E0C33D3002DC1CD /* ML_Expand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ML_Expand.png; sourceTree = "<group>"; };
-		494DB4A91E0C33D3002DC1CD /* MLLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLog.h; sourceTree = "<group>"; };
-		494DB4AA1E0C33D3002DC1CD /* MLLog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MLLog.storyboard; sourceTree = "<group>"; };
-		494DB4AB1E0C33D3002DC1CD /* MLLogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLogVC.h; sourceTree = "<group>"; };
-		494DB4AC1E0C33D3002DC1CD /* MLLogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLogVC.m; sourceTree = "<group>"; };
 		49FF51EB1E0C0BA000EE5CC1 /* MLLogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLLogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FF51EF1E0C0BA000EE5CC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49FF51F11E0C0BA000EE5CC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,20 +47,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		494DB4A61E0C33D3002DC1CD /* MLLog */ = {
-			isa = PBXGroup;
-			children = (
-				494DB4A71E0C33D3002DC1CD /* ML_Drag.png */,
-				494DB4A81E0C33D3002DC1CD /* ML_Expand.png */,
-				494DB4A91E0C33D3002DC1CD /* MLLog.h */,
-				494DB4AA1E0C33D3002DC1CD /* MLLog.storyboard */,
-				494DB4AB1E0C33D3002DC1CD /* MLLogVC.h */,
-				494DB4AC1E0C33D3002DC1CD /* MLLogVC.m */,
-			);
-			name = MLLog;
-			path = ../../MLLog;
-			sourceTree = "<group>";
-		};
 		49FF51E21E0C0BA000EE5CC1 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +68,6 @@
 		49FF51ED1E0C0BA000EE5CC1 /* MLLogDemo */ = {
 			isa = PBXGroup;
 			children = (
-				494DB4A61E0C33D3002DC1CD /* MLLog */,
 				49FF51F11E0C0BA000EE5CC1 /* AppDelegate.h */,
 				49FF51F21E0C0BA100EE5CC1 /* AppDelegate.m */,
 				49FF51F41E0C0BA100EE5CC1 /* ViewControllerA.h */,
@@ -193,11 +168,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				494DB4AD1E0C33D3002DC1CD /* ML_Drag.png in Resources */,
 				49FF51FE1E0C0BA100EE5CC1 /* LaunchScreen.storyboard in Resources */,
 				49FF51FB1E0C0BA100EE5CC1 /* Assets.xcassets in Resources */,
-				494DB4AE1E0C33D3002DC1CD /* ML_Expand.png in Resources */,
-				494DB4AF1E0C33D3002DC1CD /* MLLog.storyboard in Resources */,
 				49FF51F91E0C0BA100EE5CC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +233,6 @@
 				49FF51F31E0C0BA100EE5CC1 /* AppDelegate.m in Sources */,
 				49FF51F01E0C0BA000EE5CC1 /* main.m in Sources */,
 				49FF520D1E0C0CE400EE5CC1 /* ViewControllerB.m in Sources */,
-				494DB4B01E0C33D3002DC1CD /* MLLogVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
