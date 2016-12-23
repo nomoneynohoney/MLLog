@@ -29,7 +29,7 @@ iOS 8.0 and above.
 platform :ios, '8.0'
 
 target 'TargetName' do
-  pod 'MLLog', '-> 1.1.2'
+  pod 'MLLog', '~> 1.1.2'
 end
 ```
 
