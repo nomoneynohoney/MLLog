@@ -4,7 +4,7 @@ An Objective-C NSLog replacement for presenting a resizable log window on device
 
 Objective-C NSLog的替代品, 並且可以在執行時期顯示Log視窗, 方便多機測試時使用.
 
-[![Click To Watch The Demo](https://img.youtube.com/vi/tHF0GBeRl_w/0.jpg)](https://youtu.be/tHF0GBeRl_w "Click To Watch The Demo")
+![DEMO GIF](http://i.makeagif.com/media/12-27-2016/o1scnq.gif)
 
 
 ## Features
